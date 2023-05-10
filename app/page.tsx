@@ -11,9 +11,9 @@ import FeedTabs from "./components/FeedTabs";
 
 export default function Home() {
 
-  if (window.location.hash.includes('#access_token=')) { // Just in case :)
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
+  // if (window.location.hash.includes('#access_token=')) { // Just in case :)
+  //   window.history.replaceState({}, document.title, window.location.pathname);
+  // }
 
   const { supabase } = useSupabase();
   const [posts, setPosts] = useState([]);
